@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  height: 100;
+}
+.bgimg-container {
+  margin-bottom: 5em;
+  background-image: url(img/bg3.jpeg);
+  /*background: linear-gradient(to right, #770000 0%, #02217e 100%);*/
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.inner-container {
+  text-align: center;
+  position: relative;
+  font-family: "Bangers";
+  font-size: 22px;
+  color: black;
+}
+body {
+  font-family: "Bangers";
+  font-size: 22px;
+  background-color: rgb(36, 36, 36);
+  color: #ffffff;
+  width: 100%;
+}
+.pp {
+  border-radius: 135px;
+  margin: 1em;
+  padding: 1em;
+}
+.logo-container {
+  grid-column: 1fr, 1fr;
+}
+span {
+  padding: 10px;
+}
+.spaces {
+  margin-bottom: 10px;
+}
