@@ -40,3 +40,19 @@ span {
 .spaces {
   margin-bottom: 10px;
 }
+
+a.btn{
+  text-decoration: none;
+  color:#ffffff;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.primary{
+  background-color:blueviolet ;
+  
+}
+
+.button{
+  padding: 20px;
+}
