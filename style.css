@@ -4,14 +4,23 @@
 }
 .bgimg-container {
   margin-bottom: 5em;
-  background-image: url(img/bg3.jpeg);
+  background-image: url('img/bg2.png');
   /*background: linear-gradient(to right, #770000 0%, #02217e 100%);*/
-
   background-position: center;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat*/;
   background-size: cover;
   position: relative;
+  box-shadow: 1px 3px 10px 5px purple;
+  animation: slider 15s infinite linear;
 }
+
+@keyframes slider{
+  0%{background-image: url(img/bg3.jpeg);}
+  33%{background-image: url(img/bg1.jpeg);}
+  100%{background-image: url(img/bg2.png);}
+  
+}
+
 .inner-container {
   text-align: center;
   position: relative;
