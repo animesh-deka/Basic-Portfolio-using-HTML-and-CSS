@@ -5,20 +5,26 @@
 .bgimg-container {
   margin-bottom: 5em;
   background-image: url('img/bg2.png');
-  /*background: linear-gradient(to right, #770000 0%, #02217e 100%);*/
   background-position: center;
-  /*background-repeat: no-repeat*/;
   background-size: cover;
   position: relative;
-  box-shadow: 1px 3px 10px 5px purple;
+  box-shadow: 19px 10px 100px 30px rgb(5, 128, 185);
   animation: slider 15s infinite linear;
 }
 
 @keyframes slider{
-  0%{background-image: url(img/bg3.jpeg);}
-  33%{background-image: url(img/bg1.jpeg);}
-  100%{background-image: url(img/bg2.png);}
-  
+  0% {
+    background-image: url(img/bg2.png);
+  }
+  25% {
+    background-image: url(img/bg3.jpeg);
+  }
+  50% {
+    background-image: url(img/bg1.jpeg);
+  }
+  100% {
+    background-image: url(img/bg2.png);
+  }  
 }
 
 .inner-container {
@@ -26,22 +32,22 @@
   position: relative;
   font-family: "Bangers";
   font-size: 22px;
-  text-shadow: 1px 1px #ff0800;
 }
 body {
   font-family: "Bangers";
   font-size: 22px;
   background-color: rgb(36, 36, 36);
-  color: #ffffff;
+  color: #f5f1f1;
   width: 100%;
+  text-shadow: 5px 5px rgb(245, 4, 165);
 }
 .pp {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
   border-radius: 135px;
-  margin: 1em;
+  margin: 0em;
   padding: 1em;
-}
-.logo-container {
-  grid-column: 1fr, 1fr;
 }
 span {
   padding: 10px;
@@ -58,10 +64,19 @@ a.btn{
 }
 
 .primary{
-  background-color:blueviolet ;
-  
+  background-color: rgb(245, 4, 165);  
 }
 
-.button{
+.button {
   padding: 20px;
+  transition: transform 250ms;
+}
+.button:hover {
+  transform: translateY(-10px);
+}
+.logo {
+  transition: transform 250ms;
+}
+.logo:hover {
+  transform: translateY(-10px);
 }
